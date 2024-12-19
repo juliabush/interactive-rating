@@ -1,3 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --font-style: 'Overpass';
+    --pumpkin-orange: hsl(25, 97%, 53%);
+    --white: White: hsl(0, 0%, 100%);
+    --cold-light-grey:  hsl(217, 12%, 63%);
+    --cold-dark-grey: hsl(213, 19%, 18%);
+    --charcoal-background: hsl(216, 12%, 8%);
+}
 /* 1. Use a more-intuitive box-sizing model */
 *, *::before, *::after {
     box-sizing: border-box;
