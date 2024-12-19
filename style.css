@@ -55,3 +55,17 @@
   #root, #__next {
     isolation: isolate;
   }
+
+  html {
+    height: 100%;
+    background-color: var(--charcoal-background);
+    display: flex;
+
+  }
+.rating-card {
+   background-color: var(--cold-dark-grey);
+
+}
+.thankyou-card {
+    display: none;
+}
