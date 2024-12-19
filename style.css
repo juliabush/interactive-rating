@@ -2,6 +2,9 @@
 
 :root {
     --font-style: 'Overpass';
+    --font-light-weight: 400;
+    --font-bold: 700;
+
     --pumpkin-orange: hsl(25, 97%, 53%);
     --white: White: hsl(0, 0%, 100%);
     --cold-light-grey:  hsl(217, 12%, 63%);
@@ -68,6 +71,7 @@
    background-color: var(--cold-dark-grey);
    margin: 1rem;
    border-radius: 0.5rem;
+   font-family: var(--font-style);
 
 }
 .thankyou-card {
