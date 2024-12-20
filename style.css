@@ -123,6 +123,8 @@ article * {
     color: rgb(246, 243, 243);
     font-weight: var(--font-bold);
     opacity: 1;
+    position: relative;
+    cursor: pointer;
 
 }  
 
@@ -143,17 +145,22 @@ article * {
   text-transform: uppercase;
   letter-spacing: 2px;
   color: rgb(10, 14, 22);
+  position: relative;
+    cursor: pointer;
+
 }
-.rating-card__button--circle::after{
-  display: block;
-  content: '';
-  cursor: pointer;
-}
-.rating-card__button--circle.active::after{
-  display: block;
-  content: '';
+.rating-card__group-buttons .rating-card__button--circle.hover {
+  transition: background-color 0.3s ease;
   background-color: white;
-  color:  rgb(10, 14, 22);
+}
+.rating-card__button--circle::after {
+  display: block;
+  content: '';
+
+}
+.rating-card__button--circle.active::after {
+  display: block;
+  content: '';
 }
 @media (min-width:500px) {
   .rating-card {
