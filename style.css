@@ -145,10 +145,12 @@ article * {
   color: rgb(10, 14, 22);
 }
 .rating-card__button--circle::after{
+  display: block;
   content: '';
   cursor: pointer;
 }
 .rating-card__button--circle.active::after{
+  display: block;
   content: '';
   background-color: white;
   color:  rgb(10, 14, 22);
