@@ -69,7 +69,7 @@
 .rating-card {
    background-color: var(--cold-dark-grey);
    margin: 1.5rem;
-   padding: 1.5rem;
+   padding: 1rem;
    border-radius: 0.5rem;
    font-family: var(--font-style);
    font-size: 0.938rem;
@@ -82,18 +82,23 @@ article * {
     margin: 0.375rem;
 }
 .rating-card__group-buttons {
-    display: flex;
-    gap: 1rem;
     margin: 0;
+    margin-bottom: .5rem;
+    display: flex;
+    align-items: center;
+    justify-content: baseline;
     font-style: inherit;
+    color: inherit;
+
 }
 .rating-card__button--circle {
     min-height: 40px;
-    min-width: 40px;
+    min-width: 44px;
     background-color:  hsl(212, 13%, 20%);
     border-color: transparent;
     border-radius: 1.5rem;
     padding: 10px;
+    overflow: hidden;
     
 
 }
@@ -110,4 +115,5 @@ article * {
 .rating-card__submit-button {
   background-color: var(--pumpkin-orange);
   border-color: transparent;
+  font-style: inherit;
 }
