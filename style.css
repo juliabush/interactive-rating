@@ -68,18 +68,24 @@
   }
 .rating-card {
    background-color: var(--cold-dark-grey);
-   margin: 1.5rem;
+   margin: 1.5rem auto;
    padding: 1rem;
-   border-radius: 0.5rem;
+   border-radius: 1rem;
    font-family: var(--font-style);
    font-size: 0.938rem;
    color: rgb(229, 226, 226);
    font-weight: var(--font-bold);
    opacity: 0.7;
    display: grid;
+   max-width: 330px;
 }
 article * {
-    margin: 0.375rem;
+  margin: 0.375rem;
+}
+.rating-card__title {
+  color: initial white;
+
+  
 }
 .rating-card__group-buttons {
     margin: 0;
@@ -89,23 +95,28 @@ article * {
     justify-content: baseline;
     font-style: inherit;
     color: inherit;
+    gap: 0.2rem;
+    font-size: 0.938rem;
+    color: rgb(229, 226, 226);
+    font-weight: var(--font-bold);
+    opacity: 0.7;
 
 }
 .rating-card__button--circle {
     min-height: 40px;
     min-width: 44px;
-    background-color:  hsl(212, 13%, 20%);
+    background-color:  hsl(212, 13%, 30%);
     border-color: transparent;
     border-radius: 1.5rem;
     padding: 10px;
     overflow: hidden;
-    
+    font-size: 0.938rem;
+    color: rgb(229, 226, 226);
+    font-weight: var(--font-bold);
+    opacity: 1;
 
-}
-.rating-card__title {
-    color: white;
-    
-}
+}  
+
 .rating-card__description {
     font-weight: var(--font-light-weight);
 }
@@ -116,4 +127,6 @@ article * {
   background-color: var(--pumpkin-orange);
   border-color: transparent;
   font-style: inherit;
+  overflow: hidden;
+  
 }
