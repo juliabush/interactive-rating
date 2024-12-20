@@ -145,11 +145,11 @@ article * {
   color: rgb(10, 14, 22);
 }
 .rating-card__button--circle::after{
-  content: "";
+  content: '';
   cursor: pointer;
 }
 .rating-card__button--circle.active::after{
-  content: "";
+  content: '';
   background-color: white;
   color:  rgb(10, 14, 22);
 }
