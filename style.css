@@ -5,10 +5,10 @@
     --font-light-weight: 400;
     --font-bold: 700;
 
-    --pumpkin-orange: hsl(25, 97%, 53%);
+    --pumpkin-orange: hsl(25, 100%, 50%);
     --white: White: hsl(0, 0%, 100%);
-    --cold-light-grey:  hsl(217, 12%, 63%);
-    --cold-dark-grey: hsl(213, 19%, 18%);
+    --cold-light-grey:  hsl(214, 16%, 20%);
+    --cold-dark-grey: hsl(212, 31%, 12%);
     --charcoal-background: hsl(216, 12%, 8%);
 }
 /* 1. Use a more-intuitive box-sizing model */
@@ -73,7 +73,7 @@
    border-radius: 1rem;
    font-family: var(--font-style);
    font-size: 0.938rem;
-   color: rgb(246, 243, 243);
+   color: rgba(212, 205, 205, 0.63);
    font-weight: var(--font-bold);
    opacity: 0.7;
    display: grid;
@@ -83,14 +83,18 @@ article * {
   margin: 0.375rem;
 }
 .rating-card__title {
-  color: initial white;
+  color: rgb(255, 255, 255);
+  opacity: 1;
   font-size: 1.75rem;
+  text-shadow: 0 0 2px rgba(255, 255, 255, 0.3);
 }
 .rating-card__button--circle[data-icon="star"]::before{
   content: "";
   width: 17px;
   height: 16px;
   background-image: url("images/icon-star.svg");
+  display: inline-block;
+  transform: translate(-0%, 16%)
  }
 .rating-card__group-buttons {
     margin: 0;
@@ -108,12 +112,12 @@ article * {
 
 }
 .rating-card__button--circle {
-    min-height: 38px;
+    min-height: 36px;
     min-width: 44px;
-    background-color:  hsl(212, 13%, 30%);
+    background-color:  hsl(215, 9%, 26%);
     border-color: transparent;
     border-radius: 1.5rem;
-    padding: 10px;
+    padding: 8.5px;
     overflow: hidden;
     font-size: 0.938rem;
     color: rgb(246, 243, 243);
@@ -138,4 +142,37 @@ article * {
   font-size: 0.925rem;
   text-transform: uppercase;
   letter-spacing: 2px;
+  color: rgb(10, 14, 22);
+}
+@media (min-width:500px) {
+  .rating-card {
+    background: linear-gradient(to bottom, var(--cold-dark-grey), hsl(214, 31%, 10%) );
+    margin: 1.5rem auto;
+    padding: 2.5rem;
+    border-radius: 1rem;
+    font-family: var(--font-style);
+    font-size: 0.938rem;
+    color: rgba(246, 243, 243, 0.63);
+    font-weight: var(--font-bold);
+    opacity: 0.7;
+    display: grid;
+    max-width: 460px;
+ }
+ article * {
+  margin: 0.5rem;
+}
+ .rating-card__group-buttons {
+  margin: 0;
+  margin-bottom: .5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-style: inherit;
+  color: inherit;
+  gap: 1.2rem;
+  font-size: 0.938rem;
+  color: rgb(246, 243, 243);
+  font-weight: var(--font-bold);
+  opacity: 0.7;
+}
 }
