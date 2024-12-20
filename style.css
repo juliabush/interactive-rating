@@ -144,6 +144,15 @@ article * {
   letter-spacing: 2px;
   color: rgb(10, 14, 22);
 }
+.rating-card__button--circle::after{
+  content: "";
+  cursor: pointer;
+}
+.rating-card__button--circle.active::after{
+  content: "";
+  background-color: white;
+  color:  rgb(10, 14, 22);
+}
 @media (min-width:500px) {
   .rating-card {
     background: linear-gradient(to bottom, var(--cold-dark-grey), hsl(214, 31%, 10%) );
@@ -176,3 +185,4 @@ article * {
   opacity: 0.7;
 }
 }
+
