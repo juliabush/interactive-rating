@@ -76,6 +76,7 @@
    color: rgb(229, 226, 226);
    font-weight: var(--font-bold);
    opacity: 0.7;
+   display: grid;
 }
 article * {
     margin: 0.375rem;
@@ -84,6 +85,7 @@ article * {
     display: flex;
     gap: 1rem;
     margin: 0;
+    font-style: inherit;
 }
 .rating-card__button--circle {
     min-height: 40px;
@@ -92,7 +94,7 @@ article * {
     border-color: transparent;
     border-radius: 1.5rem;
     padding: 10px;
-    font-style: inherit;
+    
 
 }
 .rating-card__title {
@@ -104,4 +106,8 @@ article * {
 }
 .thankyou-card {
     display: none;
+}
+.rating-card__submit-button {
+  background-color: var(--pumpkin-orange);
+  border-color: transparent;
 }
