@@ -24,7 +24,16 @@ function checkActiveState() {
     const isSubmitActive = Array.from(ratingCardSubmitButtons).some(button => button.classList.contains("active"));
 
     if (isCircleActive && isSubmitActive) {
-        ratingCard.style.display = "none"; // Hide the rating card
-        thankYouCard.style.display = "block"; // Show the thank-you card
+        ratingCard.style.display = "none"; 
+        thankYouCard.classList.toggle("active");
     }
 }
+const selectedText = document.getElementById("selected-text");
+
+ratingCardButtonCircles.forEach(button => {
+    button.addEventListener("click", () => {
+        const buttonValue = button.getAttribute("data-rating"); // Get the value from the button
+        selectedText.textContent = `You selected ${buttonValue} out of 5`; // Update the text content
+    });
+});
+

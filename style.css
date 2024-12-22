@@ -67,7 +67,7 @@
 
   }
 .rating-card {
-   background-color: var(--cold-dark-grey);
+   background: linear-gradient(to bottom, var(--cold-dark-grey), hsl(214, 31%, 10%) );
    margin: 1.5rem auto;
    padding: 1rem;
    border-radius: 1rem;
@@ -133,6 +133,53 @@ article * {
 }
 .thankyou-card {
     display: none;
+}
+.thankyou-card.active {
+  background: linear-gradient(to bottom, var(--cold-dark-grey), hsl(214, 31%, 10%) );
+  margin: 1.5rem auto;
+  padding: 2rem;
+  border-radius: 1rem;
+  font-family: var(--font-style);
+  font-size: 0.938rem;
+  color: rgba(212, 205, 205, 0.63);
+  font-weight: var(--font-bold);
+  opacity: 0.7;
+  display: grid;
+  max-width: 330px;
+  place-content: center;
+  text-align: center;
+}
+.thankyou-card__icon[data-icon="thank-you"] {
+  content: "";
+  margin-bottom: 0.5rem;
+  width: 162px;
+  height: 108px;
+  background-image: url("images/illustration-thank-you.svg");
+  display: grid;
+  place-self: center;
+}
+.thankyou-card__custom-rating-button {
+  display: inherit;
+  place-self: center;
+  background-color:  hsl(215, 9%, 26%);
+  min-width: 200px;
+    border-color: transparent;
+    border-radius: 1.5rem;
+    padding: 4px;
+    margin-top: 0.5rem;
+    overflow: hidden;
+    font-size: 0.938rem;
+    color: rgb(246, 243, 243);
+    font-weight: var(--font-bold);
+    opacity: 1;
+    cursor: pointer;
+}
+.thankyou-card__title {
+  color: rgb(255, 255, 255);
+  opacity: 1;
+  font-size: 1.75rem;
+  text-shadow: 0 0 2px rgba(255, 255, 255, 0.3);
+
 }
 .rating-card__submit-button {
   background-color: var(--pumpkin-orange);
@@ -213,5 +260,23 @@ article * {
   font-weight: var(--font-bold);
   opacity: 0.7;
 }
+}
+@media (min-width:500px) {
+  .thankyou-card.active {
+    background: linear-gradient(to bottom, var(--cold-dark-grey), hsl(214, 31%, 10%) );
+    margin: 1.5rem auto;
+    padding: 2.5rem;
+    border-radius: 1rem;
+    font-family: var(--font-style);
+    font-size: 0.938rem;
+    color: rgba(246, 243, 243, 0.63);
+    font-weight: var(--font-bold);
+    opacity: 0.7;
+    display: grid;
+    max-width: 460px;
+ }
+}
+ article * {
+  margin: 0.5rem;
 }
 

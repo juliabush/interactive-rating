@@ -27,19 +27,19 @@
       to help us improve our offering!
     </p>
     <div class="rating-card__group-buttons">
-      <button class="rating-card__button--circle" type="button" aria-label="Rate the product 1 out of 5">
+      <button class="rating-card__button--circle" type="button" aria-label="Rate the product 1 out of 5" data-rating="1">
         1
       </button>
-      <button class="rating-card__button--circle" type="button" aria-label="Rate the product 2 out of 5">
+      <button class="rating-card__button--circle" type="button" aria-label="Rate the product 2 out of 5" data-rating="2">
         2
       </button>
-      <button class="rating-card__button--circle" type="button" aria-label="Rate the product 3 out of 5">
+      <button class="rating-card__button--circle" type="button" aria-label="Rate the product 3 out of 5" data-rating="3">
         3
       </button>
-      <button class="rating-card__button--circle" type="button" aria-label="Rate the product 4 out of 5">
+      <button class="rating-card__button--circle" type="button" aria-label="Rate the product 4 out of 5" data-rating="4">
         4
       </button>
-      <button class="rating-card__button--circle" type="button" aria-label="Rate the product 5 out of 5">
+      <button class="rating-card__button--circle" type="button" aria-label="Rate the product 5 out of 5" data-rating="5">
         5
       </button>
     </div>
@@ -52,8 +52,8 @@
 
   <!-- Thank you state start -->
 <article class="thankyou-card">
-  <button class="thankyou-card__custom-rating-button">
-    You selected <!-- Add rating here --> out of 5
+  <picture class="thankyou-card__icon" data-icon="thank-you"></picture>
+  <button class="thankyou-card__custom-rating-button" id="selected-text">
   </button>
   <h1 class="thankyou-card__title"> Thank you!</h1>
   <p class="thankyou-card__description"> We appreciate you taking the time to give a rating. If you ever need more support, 
